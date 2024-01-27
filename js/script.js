@@ -17,10 +17,10 @@ const menu = [
  const food=menu.map(item=>{
    const listitem=`<div class="menu-item ${item.title} ${item.category} col-12 col-md-6 col-lg-4">
       <div class="card">
-        <img src="${item.img}" class="card-img-top" alt="${item.title}">
+        <img src="${item.img}" class="card-img card-img-top" alt="${item.title}">
         <div class="card-body">
           <h5 class="card-title">${item.title}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">${item.price}</h6>
+          <h6 class="card-subtile mb-2 text-muted">${item.price}</h6>
           <p class="card-text">${item.description}</p>
           <p class="card-text"><small class="text-muted">Category: ${item.category}</small></p>
         </div>
@@ -66,15 +66,14 @@ const menu = [
 let searchInput=document.getElementById('search-input');
 searchInput.addEventListener('keydown',(event)=>{
  if(event.key==='Enter'){
-  menuItem.filter((box)=>{
-    box.classList.add()
-   })
-    
-  }})
- 
+  menu.forEach(item=>{
+    menuItem.forEach(box=>{
+      if(searchInput.value.toLowerCase()===item.title.toLocaleLowerCase()){
+        console.log(searchInput.value)
+      }
+    })
+  })
+ }})
+  
 
-// searchInput.addEventListener('keydown',(event)=>{
-//   if(event.target.key==='Enter'){
-//     console.log('baby')
-//   }
-// })
+

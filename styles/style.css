@@ -3,103 +3,85 @@
 @media (min-width: 576px) {}
 
 @media (min-width: 992px) {}
-
-body {
-    background-color: #474742 !important;
+/* BODY-COLOR */
+body{
+    background-color:#2c2525 !important;
 }
-
-.logo {
-    width: 40px;
+/* Fixing navbar to top */
+.link-container{
+    position: sticky !important;
+    top: 0;
+z-index: 1;
 }
-
-.nav-link {
-    width: 100px;
-    height: 40px;
-    background-color: rgb(29, 28, 27);
-    border: 1px solid gold;
-    font-family: cursive;
-    color: goldenrod !important;
-    font-size: 13px;
-    font-weight: 100;
-    border-radius: 8px;
-    padding: 5px;
-    text-align: center;
-    margin: 9px;
-}
-
-.logo-name {
-    color: gold;
-    font-size: 15px;
-    font-family: cursive;
-}
-
-.searchInput {
-    width: fit-content;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 200px;
-    margin-right: 10px;
-}
-
-.card-container {
-    box-shadow: 6px 6px 6px #dbd5d5;
-    margin: 6px;
-}
-
-.cardImage {
-    width: 100%;
-    height: 100%;
-}
-
-.vedio {
-    height: 300px !important;
-}
-
-.menu-item {
+/* Button-tyles */
+.nav-link{
+    color:#FFA500!important;
     background-color: transparent;
-    padding: 10px;
-
-
-
+    border-radius: 5px;
+    border-color:#FFD700;
+    font-family: cursive;
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
 }
-
-.card {
-    background-color: aliceblue;
-    box-shadow: 5px 5px 5px #080808;
-
-}
-
-.card-img-top {
-    width: 100%;
-    height: 400px;
-}
-
-.card-body {
+/* styles when mouse hovers button */
+.nav-link:hover{
+    cursor: pointer;
     background-color: #FFD700;
-
-}
-
-.card-title {
-    font-size: 35px;
-    font-weight: 500;
-    color:#080808;
-    font-family: Roboto;
-}
-
-.card-subtitle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    color:red;
-
-}
-
-.card-text {
-    font-size: 24px;
-    font-weight: 900;
-    font-family:"Roboto" ;
-    color: #080808;
-}
-.card:hover{
+    color: #000 !important;
+    transform: scale(1.2);
     
+}
+/* Logoname styles */
+.logo-name{
+    color:#FFD700;
+    font-family: Bree serif;
+    font-size:1rem;
+    font-weight: bolder;
+
+}
+/* specifying vedio hight and width */
+.vedio{
+width: 100vw;
+height: 75vh;
+}
+/* fixing image hiage height and width */
+.card-img{
+    width:100px;
+    height:200px;
+}
+/* styling the card inside menu-item */
+.card{
+    background-color:#FFA500!important;
+    padding: 0px;
+
+}
+/* styling item name */
+.card-title{
+    color: #000 !important;
+    font-family: Roboto!important;
+    font-size: 30px !important;
+    font-weight: 500;
+}
+/* styling item price */
+.card-subtile{
+    color: #000000 !important;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 500;
+   font-size: 2em ;
+
+}
+/* styling card when mouse hovers the card */
+.card:hover{
+    background-color: #000000!important;
+    color:#f5f5f5;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px #000000;
+    .card-title{
+        color: #FFA500!important;
+    }
+    .card-subtile{
+        color: #FFD700!important;
+    }
 }
