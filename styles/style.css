@@ -39,6 +39,7 @@ z-index: 1;
     font-family: Bree serif;
     font-size:1rem;
     font-weight: bolder;
+    letter-spacing: 4px ;
 
 }
 /* specifying vedio hight and width */
@@ -67,9 +68,16 @@ height: 75vh;
 /* styling item price */
 .card-subtile{
     color: #000000 !important;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: 'Trebucet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-weight: 500;
    font-size: 2em ;
+
+}
+.card-text{
+    color: #000000 !important;
+   font-family: Bree serif;
+      font-weight: 500;
+   font-size: 12pxm ;
 
 }
 /* styling card when mouse hovers the card */
