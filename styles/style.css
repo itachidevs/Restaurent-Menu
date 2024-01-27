@@ -92,4 +92,7 @@ height: 75vh;
     .card-subtile{
         color: #FFD700!important;
     }
+    .card-text{
+        color: #FFA500;
+    }
 }

@@ -15,7 +15,7 @@ const menu = [
   ];
  let cardsContainer=document.getElementById('cardsContainer');
  const food=menu.map(item=>{
-   const listitem=`<div class="menu-item ${item.title} ${item.category} mb-3 col-12 col-md-6 col-lg-4">
+   const listitem=`<div class="menu-item ${item.title} ${item.category} mb-3 col-12 col-lg-6 col-xl-4">
       <div class="card">
         <img src="${item.img}" class="card-img card-img-top" alt="${item.title}">
         <div class="card-body">
