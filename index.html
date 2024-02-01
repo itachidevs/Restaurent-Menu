@@ -23,7 +23,7 @@
 <body>
     <!-- nabnar -->
     <nav class="navbar link-container navbar-expand-lg navbar-light bg-dark">
-        < <div class="container-fluid">
+        <div class="container-fluid">
             <div class="d-flex flex-column">
                 <!-- Logo -->
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdElEQVR4nO2ZzWsTQRTAR9SCB5VaNO+lpRVU0OpBvAh60j9BEbx4rV48+vEHeKigtVQ8+HUWPOjd1mrzZlOrxYsRRVQ8qO1BD8bWkr5pRyZJTUyym5nNbkwxDwbCzNud+c37mDcbIdqySiTnJfaxhGElMcMS50wr/IZhMyZaXXSmv4Ml3mDCJSVR12osUbGE60ZXtKLoTH+HInzsB1DVCMZaEoYl3rCGWLEOwYhovZhA5QwiUeUosVe0inAhsJ0gSlbBoSjWoAi84LlAWoDg67AgivBVJCCy/lw2ID8bsEi2dUAIsw2A/GgdELk6XEuV4oV8QOBaaItIvNJ8EKxtHZNCw6ZfnYL+ZoGIMj3fF5mywx0EhqOAiBRE50sUGHPw01E9LdbHf36g+9mSLxoJRoLcjCWysUQUEHkQCRQ+0UAq8OX5mCEcMhnJnDH5c8b8JrwaVUysetEFq78N707on37/AcibhkCowqVUCk4xwT0zYHapcBOER/UWYwKdCXJM8I0lflCEUyzhjiI4ram3UzRbWMJCLWLtQZ/fM2YsMCUTzurJxPboMxT6Z64A053wAzFj9U2P41qLNVUbRzgbNQhLnBFhyg4zZjnJ2apNkHCGCZcjgyBcNu4swuRnM2Y3Cczrp927Kp9fTOFhJrjFEt4Vv864WmCu+OzNRS95qLhDAYt4ItZVLsL0OU1OkNb3xVoRt6iAReRkcn+lvulzd4HEuaoN8aCPCd+HcKUse4mjTiCKcKBKn3DA3RVgobwa0HLrDib85OhOH1nCoJ7clnC2CEu4W6lv+kIFJuEL45baw91M8NkyiF8y4aXcBB5oyLVq3fxMXyiQQtzdtku/MKonYU/dxVtbhHBJP9uyqeQSXRvDXL4cW0ZPd252gqhrkbx7JY6s6JogixOCJc5owl5nCBsQRXjhjy7hxdggCH4tphIHQ0FYgUh4UNKFh/FA4LLykidDQ9iAsMSvK7pM8CUmi5xvCMKIzUQ63dNtmtvi7KxnSn8RhSg7/z3GEo67gOh0zwZTXgfqEU5E9v+Kstu1QSa47AJi3q2nkl1+N0FziYv0AqZsFkY4nm+OIGU11V/lCBN81+menZFB2LsWZl0/cosyMbfF4tV4XhE+r1WMNiyqsWxjBdIUUW0QbFskFlFt18K2a8Uiql4ZEcen/rb8B/IbOCcuHwBk8D0AAAAASUVORK5CYII="
@@ -42,9 +42,9 @@
                 <!-- Buttons  -->
                 <ul class="navbar-nav ml-auto">
 
-                    <!-- <li class="navitem">            
-                        <input type="search" placeholder="Search dishes" class="searchInput d-block d-lg-none" id="search-input"/>
-                    </li> -->
+                    <li class="navitem">            
+                        <input type="search" placeholder="Search dishes" class="searchInput" id="searchInput"/>
+                    </li>
 
                     <li class="nav-item">
                         <button class="nav-link All" data-filter="all" id="allBtn">All</button>
@@ -65,6 +65,7 @@
                 </ul>
                 <!-- End of list of buttons -->
             </div>
+            </div>
     </nav>
     <!-- End of navbar -->
     <!-- Vedio in the middle -->
@@ -72,7 +73,7 @@
         <source src="https://files.codingninjas.in/restaurant-1706081051.mp4" type="video/mp4">
     </video>
     <!-- List of item boxes  -->
-    <div class="container mt-4 ">
+    <div class="container-fluid  ">
         <div class="row d-flex flex-row justify-content-center" id="cardsContainer"></div>
     </div>
     </div>

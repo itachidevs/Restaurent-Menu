@@ -43,20 +43,17 @@ z-index: 1;
 
 }
 /* specifying vedio hight and width */
-.vedio{
-width: 100vw;
-height: 75vh;
-}
 /* fixing image hiage height and width */
-.card-img{
-    width:100px;
-    height:200px;
-}
+
 /* styling the card inside menu-item */
+.card-img{
+height: 50%;
+width: 100%;
+}
 .card{
     background-color:#FFA500!important;
     padding: 0px;
-
+    height: 100%;
 }
 /* styling item name */
 .card-title{
@@ -95,4 +92,4 @@ height: 75vh;
     .card-text{
         color: #FFA500!important ;
     }
-}
+} 
