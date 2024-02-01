@@ -42,6 +42,17 @@ z-index: 1;
     letter-spacing: 4px ;
 
 }
+.searchInput{
+    color:#FFA500!important;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color:#FFD700;
+    font-family: cursive;
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+}
 /* specifying vedio hight and width */
 /* fixing image hiage height and width */
 
@@ -93,3 +104,11 @@ width: 100%;
         color: #FFA500!important ;
     }
 } 
+.searchInput:hover{
+    background-color: #000;
+    color: #FFD700;
+    border-radius: 9px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px #000000;
+
+}
