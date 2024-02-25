@@ -15,7 +15,7 @@ const menu = [
   ];
  let cardsContainer=document.getElementById('cardsContainer');
  const food=menu.map(item=>{
-   const listitem=`<div class="menu-item  ${item.category} mb-3 col-12 col-md-6 col-lg-4 col-xl-3">
+   const listitem=`<div class="menu-item  ${item.category} ${item.title} mb-3 col-12 col-md-6 col-lg-4">
       <div class="card">
         <img src="${item.img}" class="card-img card-img-top" alt="${item.title}">
         <div class="card-body">
@@ -63,28 +63,9 @@ const menu = [
       })
     })
    });
-// console.log(food);
 let categories=menu.map(item=>item.category);
-// console.log(categories);
-let searchInput=document.getElementById('searchInput');
-searchInput.addEventListener('keydown',(event)=>{
-  if(event.key==='Enter')
-  {
+let titles=menu.map(item=>item.title);
+let searchInput-document.getElementById('search-input');
+searchInput,addEventListener('keydown',(event)=>{
 
-    let value=searchInput.value.toLowerCase();
-   categories.forEach((category)=>{
-    menuItem.forEach((box)=>{
-        
-        if(category.includes(value)){
-          if( box.classList.contains(category)){
-            box.classList.remove('d-none');
-          }
-        }
-    });
-         
-  
-  });
-  searchInput.value='';
-}});
-    
- 
+});
