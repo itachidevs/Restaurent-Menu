@@ -13,59 +13,73 @@ const menu = [
     { id: 12, title: "Mango Lassi", category: "beverages", price: "$5", description: "Refreshing Indian drink made with mango and yogurt", img: "https://media.istockphoto.com/id/1217751214/photo/fresh-mango-lassi-and-mango-fruit.webp?b=1&s=170667a&w=0&k=20&c=Jt0J70BwVkGdirVAu78hKb-MiMzN3_GUbCz8SmGUdS8=" },
     { id: 13, title: "Green Tea", category: "beverages", price: "$3", description: "Traditional green tea with antioxidants", img: "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjB0ZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" },
   ];
- let cardsContainer=document.getElementById('cardsContainer');
- const food=menu.map(item=>{
-   const listitem=`<div class="menu-item  ${item.category} ${item.title} mb-3 col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img src="${item.img}" class="card-img card-img-top" alt="${item.title}">
-        <div class="card-body">
-          <h5 class="card-title">${item.title}</h5>
-          <h6 class="card-subtile mb-2 text-muted">${item.price}</h6>
-          <p class="card-text">${item.description}</p>
-          <p class="card-text"><small class="text-muted">Category: ${item.category}</small></p>
-        </div>
-      </div>
-    </div>
-    `;
-    cardsContainer.innerHTML+=listitem;})
-    const menuItem=document.querySelectorAll('.menu-item');
-    const list=document.querySelectorAll('ul');
-   list.forEach(m=>{
-    m.addEventListener('click',(event)=>{
-      // console.log(event.target.innerHTML)
-      menuItem.forEach(box=>{
+let foodContainer=document.getElementById('cardsContainer');
+const foodMenu=menu.map(item=>{
+  let listItem=
+  `<div class="menu-item ${item.category} ${item.title} col-12 col-md-4 col-lg-4">
+  <div class="card">
+  <img src="${item.img}" class="card-img-top"
+  alt="${item.title}">
+  <div class="card-body">
+  <h5 class="card-title">${item.title}</h5>
+  <h6 class="card-subtitle mb-2
+  text-muted">${item.price}</h6>
+  <p class="card-text">${item.description}</p>
+  <p class="card-text"><small
+  class="text-muted">Category: ${item.category}</small></p>
+  </div>
+  </div>
+  </div>`
+  foodContainer.innerHTML+=listItem;
+});
+const menuItem=document.querySelectorAll('.menu-item');
+const list=document.querySelectorAll('ul');
+list.forEach(m=>{
+m.addEventListener('click',(event)=>{
+  // console.log(event.target.innerHTML)
+  menuItem.forEach(box=>{
 
-       box.classList.add('d-none');
-       
-       if(event.target.innerHTML==='All'){
-        box.classList.remove('d-none');
-       }
-       else if(event.target.innerHTML==='Starters'){
-        if(box.classList.contains('starters')){
-          box.classList.remove('d-none');
-        }
-       }
-       else if(event.target.innerHTML==='Mains'){
-        if(box.classList.contains('mains')){
-          box.classList.remove('d-none');
-        }
-       }
-       else if(event.target.innerHTML==='Beverages'){
-        if(box.classList.contains('beverages')){
-          box.classList.remove('d-none');
-        }
-       }
-       else if(event.target.innerHTML==='Deserts'){
-        if(box.classList.contains('desserts')){
-          box.classList.remove('d-none');
-        }
-       }
-      })
-    })
-   });
-let categories=menu.map(item=>item.category);
-let titles=menu.map(item=>item.title);
-let searchInput-document.getElementById('search-input');
-searchInput,addEventListener('keydown',(event)=>{
+   box.classList.add('d-none');
+   
+   if(event.target.innerHTML==='All'){
+    box.classList.remove('d-none');
+   }
+   else if(event.target.innerHTML==='Starters'){
+    if(box.classList.contains('starters')){
+      box.classList.remove('d-none');
+    }
+   }
+   else if(event.target.innerHTML==='Mains'){
+    if(box.classList.contains('mains')){
+      box.classList.remove('d-none');
+    }
+   }
+   else if(event.target.innerHTML==='Beverages'){
+    if(box.classList.contains('beverages')){
+      box.classList.remove('d-none');
+    }
+   }
+   else if(event.target.innerHTML==='Deserts'){
+    if(box.classList.contains('desserts')){
+      box.classList.remove('d-none');
+    }
+   }
+  })
+})
+});
+let searchInput=document.getElementById('search-input');
+searchInput.addEventListener('keydown',(event)=>{
+menuItem.forEach(item=>{
+  if(searchInput===''){
+    item.classList.remove('d-none');
+  }
+  
+  if(item.classList.contains(searchInput.value) || item.classList.contains(searchInput.value)){
+    item.classList.remove('d-none');
+  }
+  else{
+    item.classList.add('d-none');
+  }
 
+})
 });

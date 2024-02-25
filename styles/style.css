@@ -57,7 +57,7 @@ z-index: 1;
 /* fixing image hiage height and width */
 
 /* styling the card inside menu-item */
-.card-img{
+.card-img-top{
 height: 50%;
 width: 100%;
 }
