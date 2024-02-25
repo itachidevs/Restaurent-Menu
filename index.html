@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Css styles  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Bootstrap links -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- nabnar -->
+    <nav class="navbar link-container navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div class="d-flex flex-column">
+                <!-- Logo -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdElEQVR4nO2ZzWsTQRTAR9SCB5VaNO+lpRVU0OpBvAh60j9BEbx4rV48+vEHeKigtVQ8+HUWPOjd1mrzZlOrxYsRRVQ8qO1BD8bWkr5pRyZJTUyym5nNbkwxDwbCzNud+c37mDcbIdqySiTnJfaxhGElMcMS50wr/IZhMyZaXXSmv4Ml3mDCJSVR12osUbGE60ZXtKLoTH+HInzsB1DVCMZaEoYl3rCGWLEOwYhovZhA5QwiUeUosVe0inAhsJ0gSlbBoSjWoAi84LlAWoDg67AgivBVJCCy/lw2ID8bsEi2dUAIsw2A/GgdELk6XEuV4oV8QOBaaItIvNJ8EKxtHZNCw6ZfnYL+ZoGIMj3fF5mywx0EhqOAiBRE50sUGHPw01E9LdbHf36g+9mSLxoJRoLcjCWysUQUEHkQCRQ+0UAq8OX5mCEcMhnJnDH5c8b8JrwaVUysetEFq78N707on37/AcibhkCowqVUCk4xwT0zYHapcBOER/UWYwKdCXJM8I0lflCEUyzhjiI4ram3UzRbWMJCLWLtQZ/fM2YsMCUTzurJxPboMxT6Z64A053wAzFj9U2P41qLNVUbRzgbNQhLnBFhyg4zZjnJ2apNkHCGCZcjgyBcNu4swuRnM2Y3Cczrp927Kp9fTOFhJrjFEt4Vv864WmCu+OzNRS95qLhDAYt4ItZVLsL0OU1OkNb3xVoRt6iAReRkcn+lvulzd4HEuaoN8aCPCd+HcKUse4mjTiCKcKBKn3DA3RVgobwa0HLrDib85OhOH1nCoJ7clnC2CEu4W6lv+kIFJuEL45baw91M8NkyiF8y4aXcBB5oyLVq3fxMXyiQQtzdtku/MKonYU/dxVtbhHBJP9uyqeQSXRvDXL4cW0ZPd252gqhrkbx7JY6s6JogixOCJc5owl5nCBsQRXjhjy7hxdggCH4tphIHQ0FYgUh4UNKFh/FA4LLykidDQ9iAsMSvK7pM8CUmi5xvCMKIzUQ63dNtmtvi7KxnSn8RhSg7/z3GEo67gOh0zwZTXgfqEU5E9v+Kstu1QSa47AJi3q2nkl1+N0FziYv0AqZsFkY4nm+OIGU11V/lCBN81+menZFB2LsWZl0/cosyMbfF4tV4XhE+r1WMNiyqsWxjBdIUUW0QbFskFlFt18K2a8Uiql4ZEcen/rb8B/IbOCcuHwBk8D0AAAAASUVORK5CYII="
+                    class="logo navbar-brand">
+                <!-- Logo name -->
+                <p class="logo-name">Foodies </p>
+            </div>
+            <!-- Button toggler -->
+            <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsing navbar-toggler -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- Buttons  -->
+                <input type="search" placeholder="Search dishes" class="searchInput" id="search-input"/>
+
+                <ul class="navbar-nav ml-auto">
+
+                                
+                    
+
+                    <li class="nav-item">
+                        <button class="nav-link All" data-filter="all" id="allBtn">All</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-filter="starters" id="starters">Starters</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-filter="mains" id="mains">Mains</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-filter="desserts" id="deserts">Deserts</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-filter="beverages" id="beverages">Beverages</button>
+                    </li>
+
+                </ul>
+                <!-- End of list of buttons -->
+            </div>
+            </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- Vedio in the middle -->
+    <video class="vedio col-12 m-3" controls="0" autoplay loop="1" muted>
+        <source src="https://files.codingninjas.in/restaurant-1706081051.mp4" type="video/mp4">
+    </video>
+    <!-- List of item boxes  -->
+    <div class="container-fluid m-3 ">
+        <div class="row d-flex flex-row justify-content-center" id="cardsContainer"></div>
+    </div>
+    </div>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
